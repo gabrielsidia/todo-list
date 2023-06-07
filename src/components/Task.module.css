@@ -1,0 +1,53 @@
+.tasks {
+  align-items: center;
+  justify-content: space-between;
+  display:grid;
+  justify-content:space-between;
+  grid-template-columns: 46rem;
+  margin-top:2rem;
+}
+.task {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background:var(--gray-500);
+  padding:0.75rem;
+  border-radius:0.5rem;
+}
+.task .checkButton {
+  width: 1.5rem;
+  height:1.5rem;
+  margin:1rem;
+  border-radius: 50%;
+  border-color: var(--blue);
+  border-width:0.12rem;
+}
+.task .checkButton:focus {
+  background:var(--blue);
+}
+.task .checkButton svg {
+  background:var(--purple);
+  width:100%;
+  height:100%;
+}
+
+.task p {
+  color: var(--white);
+  font-size:1rem;
+}
+p.textCompleted {
+  color:var(--gray-300);
+  text-decoration:line-through;
+}
+
+.task .deleteButton {
+  background:transparent;
+  border:none;
+  color:var(--white);
+  line-height:0;
+  border-radius:4px;
+}
+.task .deleteButton:hover {
+  color: var(--red-500);
+  transition:0.2s;
+}

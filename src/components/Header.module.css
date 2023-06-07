@@ -1,0 +1,23 @@
+.nav {
+  background: linear-gradient(90deg, rgba(13,13,13,1) 0%, rgba(0,0,0,1) 17%, rgba(26,26,26,1) 63%);
+  color:var(--white);
+  height: 12rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.title {
+  display:flex;
+  align-items:center;
+  font-size:2.5rem;
+  font-weight: bold;
+  margin:0.5rem;
+}
+.firstTitle {
+  color:var(--blue);
+}
+.secondTitle {
+  color: var(--purpleDark);
+}
