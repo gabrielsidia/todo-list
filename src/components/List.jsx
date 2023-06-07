@@ -12,12 +12,14 @@ const Form = () => {
   function handleCreateTask(e) {
     e.preventDefault('');
 
+    const taskDone = e.target.task.value
+
     setTasks([...tasks, newTasks]);
     setNewTasks('');
+    e.target.task.value=''
   }
   function handleNewTasksChange(e) {
     setNewTasks(e.target.value)
-   
   }
 
   function handleInsertEmptyTask(e) {
